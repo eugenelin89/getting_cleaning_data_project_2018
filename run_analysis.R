@@ -70,7 +70,8 @@ colnames(data.new)[colnames(data.new)=="Group.1"] <- "Activity"
 colnames(data.new)[colnames(data.new)=="Group.2"] <- "Subject"
 
 
-
+# Write Result
+write.table(data.new, file = "clean_data.txt", row.names = FALSE)
 
 
 
